@@ -1,5 +1,6 @@
 <template>
   <div class="small">
+    <div class="canvas" width="400" height="400">
     <CustomerChart
       v-if="customerData.length > 0 && customer.name"
       :chartData="customerData"
@@ -8,6 +9,7 @@
       :options="chartOptions"
       :customer="customer"
     ></CustomerChart>
+    </div>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ export default Vue.extend({
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
+        aspectRatio: 1,
       },
       labels: [],
       values: [],
@@ -75,4 +78,19 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style>
+
+.canvas {
+  min-width: 300px;
+  
+}
+
+.small {
+  position: relative;
+  width: 75vh;
+  height: 37.5vw;
+ 
+  margin: auto;
+}
+
+</style>
