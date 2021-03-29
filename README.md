@@ -7,6 +7,9 @@
   2. Tela de listagem de Customers.
   3. Tela de gráfico de Custumer.
 
+#### Justificaviva
+Escolhi o framework vuejs, por familiaridade e mais costume projetando e estudando nos atualmente as técnologias e bibliotecas. 
+
 
 
 
