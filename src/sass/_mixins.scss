@@ -1,0 +1,13 @@
+@mixin flexbox($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin glassmorphism(){
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
